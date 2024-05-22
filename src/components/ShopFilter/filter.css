@@ -1,0 +1,18 @@
+.css-cp2j25-MuiSlider-thumb {
+  position: absolute;
+  width: 2px !important;
+  height: 10px !important;
+  box-sizing: border-box;
+  outline: 0;
+  background-color: black !important;
+}
+.css-7o8aqz-MuiSlider-rail {
+  background-color: black !important;
+  height: 1px !important;
+}
+.css-188mx6n-MuiSlider-root {
+  height: 1px !important;
+}
+.css-ttgsjq-MuiSlider-track {
+  background-color: black !important;
+}
