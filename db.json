@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Lira Earrings",
-      "img": "img/Lira.png",
+      "img": "/img/Lira.png",
       "category": "ring",
       "stock": "false",
       "price": "30000"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Hal Earrings",
-      "img": "img/earrings.png",
+      "img": "/img/earrings.png",
       "category": "earring",
       "stock": "false",
       "price": "19000"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Kaede Hair Pin Set Of 3",
-      "img": "img/hairset.png",
+      "img": "/img/hairset.png",
       "category": "hairset",
       "stock": "true",
       "price": "25000"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "Hair Pin Set of 3",
-      "img": "img/hairset2.png",
+      "img": "/img/hairset2.png",
       "category": "hairset",
       "stock": "true",
       "price": "30000"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "title": "Plaine Necklace",
-      "img": "img/neckleimg.png",
+      "img": "/img/neckleimg.png",
       "category": "necklace",
       "stock": "true",
       "price": "26000"
@@ -43,10 +43,40 @@
     {
       "id": 6,
       "title": "Yuki Hair Pin Set of 3",
-      "img": "img/hairset3.png",
+      "img": "/img/hairset3.png",
       "category": "hairset",
       "stock": "true",
       "price": "20000"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Top Trends From Spring",
+      "date": "Fashion - October 8, 2020",
+      "img":"/img/blog1.png",
+      "season":"spring"
+    },
+    {
+      "id": 2,
+      "title": "Top Trends From Spring",
+      "date": "Fashion - October 8, 2020",
+      "img":"/img/blog2.png",
+      "season":"summer"
+    },
+    {
+      "id": 3,
+      "title": "Top Trends From Spring",
+      "date": "Fashion - October 8, 2020",
+      "img":"/img/blog3.png",
+      "season":"winter"
+    },
+    {
+      "id": 4,
+      "title": "Top Trends From Spring",
+      "date": "Fashion - October 8, 2020",
+      "img":"/img/blog4.png",
+      "season":"spring"
     }
   ]
 }

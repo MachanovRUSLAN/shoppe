@@ -18,17 +18,17 @@ function ShopLatest() {
   return (
     <div>
       <div className="flex justify-between items-center py-10">
-        <div className="text-[30px]">Shop The Latest</div>
-        <p className="text-[20px]">Wiew All</p>
+        <div className="lg:text-[30px] text-[20px]">Shop The Latest</div>
+        <p className="lg:text-[20px] mb-0 text-[14px]">Wiew All</p>
       </div>
-      <div className="grid  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 pb-40">
-        {products.map((item, id) => {
+      <div className="grid  lg:grid-cols-3 grid-cols-2 pb-40 ">
+        {products.map((product, id) => {
           return (
-            <div className="imgLatest lg:mt-2 md:m-2 m-auto" key={id}>
-              <img className="w-full" src={item.img} />
-              <div className="content">
-                <p>{item.title}</p>
-                <p>{item.price}$</p>
+            <div className="imgLatest lg:m-2 m-[1px] lg:p-0 p-[10px]" key={id}>
+              <img className="w-[100%]" src={product.img} />
+              <div className="conten">
+                <p className="font-bold ">{product.title.slice(0, 9)}</p>
+                <p className="text-[#a79171]">${product.price}</p>
               </div>
             </div>
           );
