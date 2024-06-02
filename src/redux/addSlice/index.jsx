@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-
+import toast from "react-hot-toast";
 
 export const productSlice = createSlice({
   name: "product",
@@ -14,12 +13,11 @@ export const productSlice = createSlice({
       );
       if (item) {
         item.quantity += action.payload.quantity;
-        
+        toast.success(`Successfully added product!`);
       } else {
         state.cart.push(action.payload);
-        
+        toast.success(`Successfully added product!`);
       }
-
     },
     incrementQty: (state, action) => {
       const item = state.cart.find(

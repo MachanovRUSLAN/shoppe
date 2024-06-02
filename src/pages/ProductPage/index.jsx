@@ -9,6 +9,7 @@ import {
   faHeart,
   faEnvelope,
   faShareNodes,
+  faLeftLong,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -20,9 +21,11 @@ import {
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import toast, { Toaster } from "react-hot-toast";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function ProductPage() {
   const { id } = useParams();
@@ -71,6 +74,13 @@ function ProductPage() {
 
   return (
     <div className="boxCommon">
+      <Toaster position="top-center" />
+      <Link to="/shop" className="no-underline text-black">
+      <div className="back-button lg:hidden flex items-center ml-1 mb-2">
+        <FontAwesomeIcon icon={faLeftLong} />
+        <p className="mt-3 ml-1">back to shop</p>
+      </div>
+      </Link>
       <div className="class grid grid-cols-12">
         <div className="lg:col-span-6 col-span-12 lg:p-10" key={product.id}>
           <div className="imgbox flex lg:m-10 m-0">
@@ -155,7 +165,6 @@ function ProductPage() {
           </div>
         </div>
       </div>
-
       <div className="tabs">
         <ProductTabs />
       </div>

@@ -27,24 +27,26 @@ function ResponsivMenu() {
           <li className="text-[20px] mt-[20px] ml-[5px]">Shop</li>
         </Link>
         <Link to="/about" className="no-underline text-black">
-        <li className="text-[20px] mt-[20px] ml-[5px]">About</li>
+          <li className="text-[20px] mt-[20px] ml-[5px]">About</li>
         </Link>
         <Link to="/blog" className="no-underline text-black">
           <li className="text-[20px] mt-[20px] ml-[5px]">Blog</li>
         </Link>
         <li className="text-[20px] mt-[20px] ml-[5px]">Help</li>
-        <Link to='/contact' className="no-underline text-black">
-        <li className="text-[20px] mt-[20px] ml-[5px]">Contact</li>
+        <Link to="/contact" className="no-underline text-black">
+          <li className="text-[20px] mt-[20px] ml-[5px]">Contact</li>
         </Link>
         <li className="text-[20px] mt-[20px] ml-[5px]">Search</li>
       </ul>
       <ul className="border-t border-[#9f9f9f] mt-10">
-        <li className="flex items-center mt-4">
-          <span>
-            <FontAwesomeIcon icon={faUser} />
-          </span>
-          <p className="text-[20px] ml-2">My account</p>
-        </li>
+        <Link to="/myAccount" className="no-underline text-black">
+          <li className="flex items-center mt-4">
+            <span>
+              <FontAwesomeIcon icon={faUser} />
+            </span>
+            <p className="text-[20px] ml-2">My account</p>
+          </li>
+        </Link>
         <li className="flex items-center mt-2">
           <span>
             <FontAwesomeIcon icon={faUser} />

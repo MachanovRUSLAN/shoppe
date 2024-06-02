@@ -15,6 +15,9 @@ function Contact() {
           <Box
             component="form"
             sx={{
+              "& > :not(style)": { my: 5, width: "100%" },
+            }}
+            lg={{
               "& > :not(style)": { my: 5, width: "85ch" },
             }}
             noValidate

@@ -13,6 +13,9 @@ function BlogReply() {
         <Box
           component="form"
           sx={{
+            "& > :not(style)": { mt: 5, width: "100%" },
+          }}
+          lg={{
             "& > :not(style)": { mt: 5, width: "85ch" },
           }}
           noValidate

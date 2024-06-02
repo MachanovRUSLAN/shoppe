@@ -14,6 +14,8 @@ import MyAccount from "../../pages/MyAccount";
 import ForgPassword from "../../pages/ForgottenPasword";
 import PrivacyPolicy from "../../pages/PrivacyPolicy";
 import About from "../../pages/About";
+import NotFound from "../../pages/404";
+import CheckOut from "../../pages/CheckOut";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +70,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About/>,
+      },
+      {
+        path: "/notFound404",
+        element: <NotFound/>,
+      },
+      {
+        path: "/checkOut",
+        element: <CheckOut/>,
       },
     ],
   },

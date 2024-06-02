@@ -49,7 +49,7 @@ function Navbar() {
     <div className="flex justify-between items-end relative w-[95%] m-auto h-[100px] bg-white pb-2">
       <div className="navLogo lg:mb-0 mb-3 lg:w-[200px] w-[80px]">
         <Link to="/">
-          <img src="img/SHOPPE.png" alt="Shop Logo" />
+          <img src="/img/SHOPPE.png" alt="Shop Logo" />
         </Link>
       </div>
       <div className="navmenu flex">
@@ -60,27 +60,29 @@ function Navbar() {
           <Link to="/blog" className="no-underline">
             <li className="px-4 text-[black]  font-semibold">Blog</li>
           </Link>
-          <li className="px-4  font-semibold">Our Story</li>
+          <Link to="/checkOut" className="no-underline text-black">
+            <li className="px-4  font-semibold">Our Story</li>
+          </Link>
         </ul>
-        <ul className="flex">
+        <ul className="flex items-center">
           <li className="px-4 lg:flex hidden">
-            <img src="img/IconSearch.png" alt="Search Icon" />
+            <img src="/img/IconSearch.png" alt="Search Icon" />
           </li>
           <li className="px-4 relative" onClick={handleSideBar}>
-            <img src="img/iconshop.png" className="w-[25px]" alt="Shop Icon" />
+            <img src="/img/iconshop.png" className="w-[25px]" alt="Shop Icon" />
             <span className="text-[10px] absolute bg-white flex justify-center z-10 items-center w-[15px] h-[15px] top-[-7px] left-10 border border-black rounded-[50%]">
               {quantity}
             </span>
           </li>
           <li className="px-4 lg:hidden flex" onClick={handleMenu}>
             <img
-              src={`${openMenu ? "img/Vector.png" : "img/Menu 1.png"}`}
+              src={`${openMenu ? "/img/Vector.png" : "/img/Menu 1.png"}`}
               alt="Admin Icon"
             />
           </li>
           <Link to="/myAccount">
             <li className="px-4 lg:flex hidden">
-              <img src="img/iconAdmin.png" alt="Admin Icon" />
+              <img src="/img/iconAdmin.png" alt="Admin Icon" />
             </li>
           </Link>
         </ul>
@@ -95,19 +97,21 @@ function Navbar() {
       <div
         className={`${
           sideBar
-            ? "lg:right-[-70px]  right-[0px] "
+            ? "lg:right-[-1px]  right-[0px] "
             : "lg:right-[-350px] md:right-[-850px] right-[-950px] "
-        } absolute z-20 top-0 bg-white border border-black lg:w-[20%]  md:w-[100%] w-[100%] h-[100vh] transition-all duration-300`}
+        } fixed z-20 top-0 bg-white border border-black lg:w-[20%]  md:w-[100%] w-[100%] h-auto transition-all duration-300`}
       >
         <p
-          className={`${sideBar ? "right-[-70px]" : "right-[-350px]"} p-3`}
+          className={`${sideBar ? "right-[0px]" : "right-[-350px]"} p-3`}
           onClick={handleSideBar}
         >
           <FontAwesomeIcon icon={faRightLong} />
         </p>
         <ShopBag />
         <Link
-          className={`${sideBar ? "right-[-70px]" : "right-[-350px]"} p-3`}
+          className={`${
+            sideBar ? "right-[-70px]" : "right-[-350px]"
+          } p-3 no-underline text-black`}
           onClick={handleSideBar}
           to="/bag"
         >

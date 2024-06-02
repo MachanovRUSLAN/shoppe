@@ -21,7 +21,7 @@ function ShopBag() {
   const dispatch = useDispatch();
 
   return (
-    <div className="relative">
+    <div className="relative h-auto">
       {cart.map((item) => (
         <div className="div">
           <div className="flex" key={item.id}>
@@ -54,7 +54,7 @@ function ShopBag() {
 
             <div className="remove">
               <button
-                className="ml-6"
+                className="ml-4 mt-[2px]"
                 onClick={() => dispatch(removeFromCart({ id: item.id }))}
               >
                 <FontAwesomeIcon icon={faXmark} />
